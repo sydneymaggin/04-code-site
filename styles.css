@@ -1,0 +1,54 @@
+@font-face {
+    font-family: mr-eaves-xl-modern,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body{
+    font-size: 1rem;
+    font-family: mr-eaves-xl-modern,sans-serif;
+}
+
+h1{
+    font-weight: normal;
+    
+}
+
+h2{
+    font-size: 3rem;
+    margin: 1rem;
+    font-weight: normal;
+}
+
+
+.response-container{
+    padding: 1rem;
+    margin: .3rem;
+    border: 1px solid black;
+    border-radius: 25px;
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+
+
+.image{
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.image.active{
+    display: inline-block;
+}
+
+.summary{
+    display: none;
+}
+
+.summary.active{
+    display: block;
+}
+

@@ -1,0 +1,141 @@
+
+
+body {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 1.6rem;
+    color:white;
+    background-color: #0404c9;
+    text-align: center;
+}
+
+.header{
+    font-family: 'Syne', sans-serif;
+    margin:10rem;
+    margin-left: 20rem;
+    font-size: 5rem;
+    padding-top: 8rem;
+    width: 70rem;
+    line-height: 6rem;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin:0;
+
+    
+    
+}
+
+img{
+    border-radius: 50%;
+    
+}
+
+
+  .response-container{
+      width: 15rem;
+      height: 15rem;
+      margin: 1rem;
+      /* border: 3px solid white; */
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer; 
+      /* margin-left: 40%; */
+      /* display: grid;
+      grid-gap: 2rem;
+      grid-template-columns: 1fr 1fr; */
+  }
+
+
+
+  
+
+
+
+  
+  .response-image {
+    width: 15rem;
+    height: auto;
+    display: block;
+    position: relative;
+    top: 7rem;
+    border: none;
+    
+
+  }
+
+ 
+
+   .response-image.inactive{
+    width: 15rem;
+    height: auto;
+    display: none;
+
+  } 
+
+
+
+  .circle-container{
+      margin:-12px;
+  }
+    
+
+
+  .response-author{
+    display: none;
+}
+.response-author.active{
+    display: block;
+  
+}
+
+.response-title{
+    display: none;
+}
+.response-title.active{
+    display: block;
+}
+
+  /* .song-rating{
+      display: none;
+  }
+  .song-rating.active{
+      display: block;
+  } */
+
+  .response-year{
+      display: none;
+  }
+  .response-year.active{
+    display: block;
+}
+
+.filter{
+    margin-left: 5rem;
+    padding-top: 7rem;
+    display: flex;
+    cursor: pointer; 
+
+}
+
+
+span{
+    font-weight: 600;
+    margin: auto;
+    margin-left: 1rem;
+    padding: .5rem;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+}
+
