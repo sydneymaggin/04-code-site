@@ -7,6 +7,7 @@
 body{
     font-size: 1rem;
     font-family: mr-eaves-xl-modern,sans-serif;
+    background-color:lavender;
 }
 
 h1{
@@ -16,20 +17,26 @@ h1{
 
 h2{
     font-size: 3rem;
-    margin: 1rem;
+    margin: 2.1rem;
     font-weight: normal;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 
 .response-container{
     padding: 1rem;
-    margin: .3rem;
+    margin: 2rem;
     border: 1px solid black;
     border-radius: 25px;
     display: grid;
     grid-gap: .5rem;
     grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
 }
+
+
+
 
 
 
@@ -41,7 +48,9 @@ h2{
     display: none;
 }
 .image.active{
-    display: inline-block;
+    display: block;
+    
+
 }
 
 .summary{
@@ -52,3 +61,35 @@ h2{
     display: block;
 }
 
+.response-container:hover{
+color: #fc8803;
+font-style: italic;
+}
+
+.year{
+    padding-left: 5rem;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    h2{
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    body {
+        font-size: .5rem;
+    }
+
+    .year{
+        padding-left: 1rem;
+     }
+     .image.active{
+        display: block;
+        padding-left: 8rem;
+    
+    }
+    
+
+  }
