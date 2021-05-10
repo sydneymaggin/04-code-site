@@ -32,7 +32,7 @@ justify-content: space-between;
 }
 
 p{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-style: normal;
 }
 
@@ -64,10 +64,6 @@ p{
 .image.active{
     display: block;
     padding-left: 20rem;
-    grid-area: 0fr 1fr 0fr;
-
-   
-    
     
 
 }
