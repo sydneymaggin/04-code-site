@@ -86,10 +86,10 @@ function showResponses() {
     responseContainer.append(responseAuthor);
 
     //add summary to our song container
-    // var responseSummary = document.createElement("p");
-    // responseSummary.classList.add("summary");
-    // responseSummary.innerText = response.fields.summary;
-    // responseContainer.append(responseSummary);
+    var responseSummary = document.createElement("p");
+    responseSummary.classList.add("summary");
+    responseSummary.innerText = response.fields.summary;
+    responseContainer.append(responseSummary);
 
     //add image to response container
     var responseImage = document.createElement("img");
@@ -102,8 +102,8 @@ function showResponses() {
     // image and summary will appear or disappear
 
     responseContainer.addEventListener("click", function(){
-      // responseSummary.classList.toggle("active");
       responseImage.classList.toggle("active");
+      responseSummary.classList.toggle("active");
     })
      
 
@@ -114,9 +114,11 @@ function showResponses() {
     container.addEventListener("click", function(){
     if(isColored){
     responseContainer.style.background = "white";
+    responseContainer.style.color = "#3beb02";
     isColored = false;
     } else{
-      responseContainer.style.background = "#b9e4fa";
+      responseContainer.style.background = "#3beb02";
+      responseContainer.style.color = "white";
     isColored = true;
     }
     });    

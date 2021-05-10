@@ -7,7 +7,11 @@
 body{
     font-size: 1rem;
     font-family: mr-eaves-xl-modern,sans-serif;
-    background-color:lavender;
+    background-color:white;
+    color: #3beb02;
+    padding: 2rem;
+    padding-top: 2rem;
+
 }
 
 h1{
@@ -18,21 +22,30 @@ h1{
 h2{
     font-size: 3rem;
     margin: 2.1rem;
-    font-weight: normal;
-    padding-top: 3rem;
+    font-weight: 500;
     padding-bottom: 3rem;
 }
 
+.header{
+display: flex;
+justify-content: space-between;
+}
+
+p{
+    font-size: 2rem;
+    font-style: normal;
+}
 
 .response-container{
     padding: 1rem;
-    margin: 2rem;
+    margin: 1rem;
     border: 1px solid black;
     border-radius: 25px;
     display: grid;
     grid-gap: .5rem;
     grid-template-columns: 1fr 1fr 1fr;
     align-content: center;
+    padding-left: 12rem;
 }
 
 
@@ -43,12 +56,18 @@ h2{
 
 
 .image{
-    width: 100%;
+    width: 80%;
     height: auto;
     display: none;
+    
 }
 .image.active{
     display: block;
+    padding-left: 20rem;
+    grid-area: 0fr 1fr 0fr;
+
+   
+    
     
 
 }
@@ -62,8 +81,8 @@ h2{
 }
 
 .response-container:hover{
-color: #fc8803;
 font-style: italic;
+color: #3beb02;
 }
 
 .year{
@@ -75,11 +94,16 @@ font-style: italic;
 
 @media only screen and (max-width: 600px) {
     h2{
-        font-size: 1.5rem;
-        padding-bottom: 1rem;
+        font-size: 2rem;
+        padding-bottom: 0rem;
     }
     body {
         font-size: .5rem;
+        padding:0rem;
+
+    }
+    p{
+        font-size: 1rem;
     }
 
     .year{
@@ -87,8 +111,26 @@ font-style: italic;
      }
      .image.active{
         display: block;
-        padding-left: 8rem;
+        padding-left: 0rem;
+        height: 200px;
+        width: auto;
     
+    }
+
+    .summary.active{
+        display: none;
+    }
+    
+    .response-container{
+        padding-left: 1rem;
+    }
+
+    #class{
+        display: none;
+    }
+    
+    #name{
+        display: none;
     }
     
 
